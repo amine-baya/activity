@@ -1,0 +1,167 @@
+.first-view {
+
+    display: grid;
+    grid-template-columns: 20% 80%;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;  
+  }
+
+  .first-view .side-activity {
+    height: 100vh;
+    background: red;
+    
+  }
+  
+  .first-view .items  {
+    position: relative;
+    background-color: #f9f9f9;
+    transition: all 1s ease;
+
+  }
+
+ 
+  
+  .first-view .items .item img  {
+    width: 100%; 
+    height: 100%;
+  }
+
+
+  .first-view .items .item.butterPlate  {
+   position: absolute;
+   top: 5%;
+
+   width: 380px;
+   height: 300px;
+  }
+  .first-view .items .item.dessertSpoon  {
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    width: 300px;
+    height: 150px;
+   }
+   .first-view .items .item.dessertFork  {
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    width: 350px;
+    height: 300px;
+   }
+   .first-view .items .item.waterGlass  {
+    position: absolute;
+    top: 5%;
+    left: 60%;
+    width: 120px;
+    height: 230px;
+   }
+   .first-view .items .item.juiceGlass  {
+    position: absolute;
+    top: 0%;
+    left: 70%;
+    width: 200px;
+    height: 300px;
+   }
+   .first-view .items .item.napkin  {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 420px;
+    height: 300px;
+   }
+   .first-view .items .item.saladFork  {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    width: 320px;
+    height: 260px;
+   }
+   .first-view .items .item.dinnerFork  {
+    position: absolute;
+    top: 50%;
+    left:25%;
+    width: 250px;
+    height: 260px;
+   }
+   .first-view .items .item.placePlate  {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 350px;
+    height: 360px;
+   }
+   .first-view .items .item.dinnerKnife  {
+    position: absolute;
+    top: 45%;
+    left: 62%;
+    width: 300px;
+    height: 300px;
+   }
+   .first-view .items .item.soupSpoon  {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    width: 300px;
+    height: 300px;
+   }
+  
+   .first-view .items.active .item  {
+
+    left: 0% ;
+    z-index: 10;
+    transform: translateX(-100%) scale(.5);
+    transition: all 1s ease;
+  }
+
+  
+  .first-view .items.active .item.butterPlate  {
+    top: 70%;
+    left: -7% !important;
+
+   }
+   .first-view .items.active .item.dessertSpoon  {
+    top: 50%;
+   
+    }
+    .first-view .items.active .item.dessertFork  {
+      top: 60%;
+    left: -100px !important;
+
+    
+    }
+    .first-view .items.active .item.waterGlass  {
+      top: 72%;
+    left: -2% !important;
+
+    }
+    .first-view .items.active .item.juiceGlass  {
+      top: 30%;
+    left: -15% !important;
+
+    }
+    .first-view .items.active .item.napkin  {
+      top: 0%;
+    }
+    .first-view .items.active .item.saladFork  {
+      top: 0%;
+    left: -10% !important;
+
+    }
+
+    .first-view .items.active .item.dinnerFork  {
+      top: 50%;
+    left: -10% !important;
+     }
+     .first-view .items.active .item.placePlate  {
+      top: 20%;
+      
+     }
+     .first-view .items.active .item.dinnerKnife  {
+      top: 30%;
+      left: 5% !important;
+     }
+     .first-view .items.active .item.soupSpoon  {
+      top: 20px;
+      left: 5% !important;
+     }
