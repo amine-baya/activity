@@ -4,19 +4,21 @@
     grid-template-columns: 20% 80%;
     height: 100vh;
     margin-left: auto;
-    margin-right: auto;  
+    margin-right: auto; 
   }
 
   .first-view .side-activity {
     height: 100vh;
-    background: red;
+   
     
   }
-  
-  .first-view .items  {
+  .first-view section  {
     position: relative;
+  }
+  .first-view section .items  {
     background-color: #f9f9f9;
     transition: all 1s ease;
+    height: 100%;
 
   }
 
@@ -28,82 +30,105 @@
   }
 
 
-  .first-view .items .item.butterPlate  {
+  .first-view  .item.butterPlate  {
    position: absolute;
    top: 5%;
 
-   width: 380px;
-   height: 300px;
+   width: 25%;
+   height: 35%;
   }
-  .first-view .items .item.dessertSpoon  {
+  .first-view  .item.dessertSpoon  {
     position: absolute;
-    top: 10%;
+    top: 5%;
     left: 30%;
     width: 300px;
     height: 150px;
    }
-   .first-view .items .item.dessertFork  {
+   .first-view  .item.dessertFork  {
     position: absolute;
-    top: 10%;
+    top: 20%;
     left: 30%;
-    width: 350px;
-    height: 300px;
+    width: 300px;
+    height: 150px;
    }
-   .first-view .items .item.waterGlass  {
+   .first-view  .item.dessertFork img  {
+    height: 250px;
+    transform: translateY(-50px);
+   }
+   .first-view  .item.waterGlass  {
     position: absolute;
-    top: 5%;
+    top: 15%;
     left: 60%;
     width: 120px;
     height: 230px;
    }
-   .first-view .items .item.juiceGlass  {
+   .first-view  .item.juiceGlass  {
     position: absolute;
-    top: 0%;
+    top: 10%;
     left: 70%;
     width: 200px;
     height: 300px;
    }
-   .first-view .items .item.napkin  {
+   .first-view  .item.napkin  {
     position: absolute;
-    top: 45%;
+    top: 55%;
     left: 0;
-    width: 420px;
+    width: 220px;
     height: 300px;
    }
-   .first-view .items .item.saladFork  {
+   .first-view  .item.napkin img  {
+    width: 420px;
+    transform: translateX(-100px);
+   }
+   .first-view  .item.saladFork  {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 15%;
-    width: 320px;
+    width: 120px;
     height: 260px;
    }
-   .first-view .items .item.dinnerFork  {
+   .first-view  .item.saladFork img {
+    width: 320px;
+    transform: translateX(-100px);
+
+   }
+   .first-view  .item.dinnerFork  {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left:25%;
     width: 250px;
     height: 260px;
    }
-   .first-view .items .item.placePlate  {
+   .first-view  .item.placePlate  {
     position: absolute;
-    top: 40%;
+    top: 60%;
     left: 40%;
     width: 350px;
     height: 360px;
    }
-   .first-view .items .item.dinnerKnife  {
+   .first-view  .item.dinnerKnife  {
     position: absolute;
-    top: 45%;
+    top: 55%;
     left: 62%;
-    width: 300px;
+    width: 200px;
     height: 300px;
+    transform: translateX(50px);
+
+    
    }
-   .first-view .items .item.soupSpoon  {
-    position: absolute;
-    top: 50%;
-    left: 70%;
+   .first-view  .item.dinnerKnife img  {
     width: 300px;
+    transform: translateX(-50px);
+
+   }
+   .first-view  .item.soupSpoon  {
+    position: absolute;
+    top: 60%;
+    left: 70%;
+    width: 200px;
     height: 300px;
+    transform: translateX(100px);
+
    }
   
    .first-view .items.active .item  {
@@ -125,7 +150,7 @@
    
     }
     .first-view .items.active .item.dessertFork  {
-      top: 60%;
+      top: 65%;
     left: -100px !important;
 
     
@@ -142,10 +167,12 @@
     }
     .first-view .items.active .item.napkin  {
       top: 0%;
+    left: -5% !important;
+
     }
     .first-view .items.active .item.saladFork  {
       top: 0%;
-    left: -10% !important;
+    left: -15% !important;
 
     }
 
@@ -159,9 +186,27 @@
      }
      .first-view .items.active .item.dinnerKnife  {
       top: 30%;
-      left: 5% !important;
+      left: 2% !important;
      }
      .first-view .items.active .item.soupSpoon  {
       top: 20px;
-      left: 5% !important;
+      left: 3% !important;
      }
+
+
+
+
+
+
+
+ 
+
+
+
+  .first-view  .item.bord  img
+  {
+      width: 100%;
+      height: 100%;
+  }
+
+  

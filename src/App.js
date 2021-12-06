@@ -16,19 +16,19 @@ const start = () => {
   setTimeout(() => {
   setactive("active")
     
-  }, 5000);
+  }, 1000);
 }
 
   return (
     <>
-    <First act = {active} />
   <DndProvider backend={HTML5Backend}>
         <div className="App">
           <div className={show ? "control-buttons" : "controll-buttons-hide" } >
             <span className={show ? "start-button" : "controll-buttons-hide" } onClick={() => start()} >Start Activity</span>
           </div>
 
-          <DragDrop />
+    <First active = {active} />
+         
         </div>
   </DndProvider>
     </>

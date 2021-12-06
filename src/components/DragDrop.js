@@ -19,55 +19,6 @@ import waterGlass from '../images/water_glass.png'
 
 
 
-const PictureList = [
-  {
-    id: 1,
-    url: butterPlate,
-  },
-  {
-    id: 2,
-    url: dessertFork,
-  },
-  {
-    id: 3,
-    url: dessertSpoon,
-  },
-  {
-    id: 4,
-    url: dinnerFork,
-  },
-  {
-    id: 5,
-    url: dinnerKnife,
-  },
-  {
-    id: 6,
-    url: juiceGlass,
-  },
-  {
-    id: 7,
-    url: napkin,
-  },
-  {
-    id: 8,
-    url: placePlate,
-  },
-  {
-    id: 9,
-    url: saladFork,
-  },
-  {
-    id: 10,
-    url: soupSpoon,
-  },
-  {
-    id: 11,
-    url: waterGlass,
-  },
- 
-  
-];
-
 const DragDrop = () => {
     const [board, setBoard] = useState([]);
 
@@ -80,8 +31,7 @@ const DragDrop = () => {
     }));
   
     const addImageToBoard = (id) => {
-      const pictureList = PictureList.filter((picture) => id === picture.id);
-      setBoard((board) => [...board, pictureList[0]]);
+      console.log(id);
     };
     return (
       
@@ -89,11 +39,6 @@ const DragDrop = () => {
 
        
 
-        <div className="Pictures">
-          {PictureList.map((picture) => {
-            return <Picture url={picture.url} id={picture.id} />;
-          })}
-        </div>
         <div className="Board" ref={drop}>
           {board.map((picture) => {
             return <Picture url={picture.url} id={picture.id} />;

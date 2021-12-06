@@ -15,7 +15,6 @@ const Picture = ({ id, url }) => {
         <img
           ref={drag} 
           src={url}
-          width="150px"
           style={{ border: isDragging ? "5px solid pink" : "0px" },{ opacity: isDragging ? 0 : 1 }}
         />
         </>
