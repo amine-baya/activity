@@ -1,6 +1,7 @@
 import react, { useState } from "react";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
+import Act from "./components/Act";
 import DragDrop from "./components/DragDrop";
 import First from "./components/First";
 
@@ -16,21 +17,21 @@ const start = () => {
   setTimeout(() => {
   setactive("active")
     
-  }, 1000);
+  }, 3000);
 }
 
   return (
     <>
-  <DndProvider backend={HTML5Backend}>
+
         <div className="App">
           <div className={show ? "control-buttons" : "controll-buttons-hide" } >
             <span className={show ? "start-button" : "controll-buttons-hide" } onClick={() => start()} >Start Activity</span>
           </div>
 
-    <First active = {active} />
+    <Act active = {active} />
          
         </div>
-  </DndProvider>
+  
     </>
     
   );

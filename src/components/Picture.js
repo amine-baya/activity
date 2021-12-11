@@ -1,14 +1,16 @@
 import React from "react";
 import { DragPreviewImage, useDrag } from "react-dnd";
 
-const Picture = ({ id, url }) => {
+const Picture = ({ id, url,type }) => {
+  
     const [{ isDragging }, drag,preview] = useDrag(() => ({
-        type: "image",
-        item: { id: id },
+        type: 'image' || type,
+        item: { id: id, type: type },
         collect: (monitor) => ({
           isDragging: !!monitor.isDragging(),
         }),
       }));
+     
       return (
         <>
         <DragPreviewImage connect={preview}  />

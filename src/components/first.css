@@ -1,20 +1,6 @@
-.first-view {
 
-    display: grid;
-    grid-template-columns: 20% 80%;
-    height: 100vh;
-    margin-left: auto;
-    margin-right: auto; 
-  }
-
-  .first-view .side-activity {
-    height: 100vh;
-   
-    
-  }
-  .first-view section  {
-    position: relative;
-  }
+ 
+  
   .first-view section .items  {
     background-color: #f9f9f9;
     transition: all 1s ease;
@@ -30,106 +16,7 @@
   }
 
 
-  .first-view  .item.butterPlate  {
-   position: absolute;
-   top: 5%;
-
-   width: 25%;
-   height: 35%;
-  }
-  .first-view  .item.dessertSpoon  {
-    position: absolute;
-    top: 5%;
-    left: 30%;
-    width: 300px;
-    height: 150px;
-   }
-   .first-view  .item.dessertFork  {
-    position: absolute;
-    top: 20%;
-    left: 30%;
-    width: 300px;
-    height: 150px;
-   }
-   .first-view  .item.dessertFork img  {
-    height: 250px;
-    transform: translateY(-50px);
-   }
-   .first-view  .item.waterGlass  {
-    position: absolute;
-    top: 15%;
-    left: 60%;
-    width: 120px;
-    height: 230px;
-   }
-   .first-view  .item.juiceGlass  {
-    position: absolute;
-    top: 10%;
-    left: 70%;
-    width: 200px;
-    height: 300px;
-   }
-   .first-view  .item.napkin  {
-    position: absolute;
-    top: 55%;
-    left: 0;
-    width: 220px;
-    height: 300px;
-   }
-   .first-view  .item.napkin img  {
-    width: 420px;
-    transform: translateX(-100px);
-   }
-   .first-view  .item.saladFork  {
-    position: absolute;
-    top: 60%;
-    left: 15%;
-    width: 120px;
-    height: 260px;
-   }
-   .first-view  .item.saladFork img {
-    width: 320px;
-    transform: translateX(-100px);
-
-   }
-   .first-view  .item.dinnerFork  {
-    position: absolute;
-    top: 60%;
-    left:25%;
-    width: 250px;
-    height: 260px;
-   }
-   .first-view  .item.placePlate  {
-    position: absolute;
-    top: 60%;
-    left: 40%;
-    width: 350px;
-    height: 360px;
-   }
-   .first-view  .item.dinnerKnife  {
-    position: absolute;
-    top: 55%;
-    left: 62%;
-    width: 200px;
-    height: 300px;
-    transform: translateX(50px);
-
-    
-   }
-   .first-view  .item.dinnerKnife img  {
-    width: 300px;
-    transform: translateX(-50px);
-
-   }
-   .first-view  .item.soupSpoon  {
-    position: absolute;
-    top: 60%;
-    left: 70%;
-    width: 200px;
-    height: 300px;
-    transform: translateX(100px);
-
-   }
+  
   
    .first-view .items.active .item  {
 
@@ -201,7 +88,11 @@
 
  
 
-
+  .first-view  .item.bord
+{
+  border: 1px solid black;
+  position: absolute;
+}
 
   .first-view  .item.bord  img
   {
