@@ -157,8 +157,8 @@ img {
 .first-view .kol .draggable-elements.active #saladFork {
   position: absolute;
   top: 2%;
-  left: 4%;
-  width: 219px;
+  left: 7%;
+  width: 120px;
   height: 140px;
 }
 
@@ -276,7 +276,7 @@ img {
   display: none;
 }
 
-.show {
+.show, .droppable-elements.a div img {
   display: block;
 }
 
@@ -400,3 +400,22 @@ transform: translateX(-30px);
 }
 /*
   */
+
+
+.timer
+{
+  padding: 20px;
+  font-size: 35px;
+}
+
+.timer span
+{
+  text-align: center;
+  background-color: gray;
+  cursor: pointer;
+  width: 143px;
+  font-size: 32px;
+  color: white;
+  display: block;
+  letter-spacing: 1px;
+}

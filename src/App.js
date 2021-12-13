@@ -17,7 +17,7 @@ const start = () => {
   setTimeout(() => {
   setactive("active")
     
-  }, 3000);
+  }, 21000);
 }
 
   return (
@@ -28,7 +28,7 @@ const start = () => {
             <span className={show ? "start-button" : "controll-buttons-hide" } onClick={() => start()} >Start Activity</span>
           </div>
 
-    <Act active = {active} />
+    <Act active = {active} show = {show} />
          
         </div>
   

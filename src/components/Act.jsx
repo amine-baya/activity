@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import butterPlate from '../images/bread_butter.png'
 import dessertFork from '../images/dessert_fork.png'
 import dessertSpoon from '../images/dessert_spoon.png'
@@ -14,6 +14,10 @@ import soupSpoon from '../images/soup_spoon.png'
 import './act.css'
 
 const Act = (props) => {
+
+  const [timer, settimer] = useState(20)
+  const [help, sethelp] = useState(false)
+
 
 
     const draggableElements = document.querySelectorAll(".draggable");
@@ -83,9 +87,33 @@ const Act = (props) => {
       }
     }
 
+   useEffect(() => {
+    if (timer > 0 && !props.show) {
+      setTimeout(() => {
+        settimer(timer - 1)
+      }, 1000);
+    }
+     
+   }, [timer, props.show])
+   console.log(timer);
+
+   const helpHandeller = () => {
+   if (timer == 0) {
+      settimer(5)
+      sethelp(true)
+     setTimeout(() => {
+       sethelp(false)
+     }, 5000);
+    }
+   }
 
     return (
+      <>
         <div className="first-view">
+      <div className='timer'>
+        <h4>the correct order will be removed in: {timer} Second</h4>
+        <span onClick={() => helpHandeller()}>help</span>
+      </div>
       
         <div className={`kol ${props.active}`}>
         <section class= {`draggable-elements ${props.active}`}>
@@ -103,7 +131,7 @@ const Act = (props) => {
   
                 
        </section>
-      <section className={ `droppable-elements ${props.active}`}>
+      <section className={ `droppable-elements ${props.active} ${help && "a"}`}>
         <div class="droppable droppable-butterPlate" data-draggable-id="butterPlate"><img className="draggable-intern"  src={butterPlate} alt="butterPlate" /></div>
         <div class="droppable droppable-dessertFork" data-draggable-id="dessertFork"><img className="draggable-intern"  src={dessertFork} alt="butterPlate" /></div>
         <div class="droppable droppable-dessertSpoon" data-draggable-id="dessertSpoon"><img className="draggable-intern"  src={dessertSpoon} alt="butterPlate" /></div>
@@ -120,6 +148,7 @@ const Act = (props) => {
       </section>
         </div>
         </div>
+        </>
     )
 }
 
