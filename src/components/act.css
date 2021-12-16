@@ -14,6 +14,36 @@
   height: 100vh;
 }
 
+.first-view .labels::after, .droppable-elements .droppable::after {
+  content: "";
+  position: absolute;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  transition: opacity ease-in-out 1s;
+  }
+  .first-view .labels::before, .droppable-elements .droppable::before {
+    content: "";
+    position: absolute;
+   
+    clip-path: polygon(40% 0%, 15% 40%, 100% 40%, 100% 60%, 15% 60%, 40% 100%, 0% 50%);
+    background-color: rgb(136, 136, 136);
+    width: 40px;
+    height: 20px;
+  transition: opacity ease-in-out 1s;
+    
+    }
+
+
+    .first-view .draggable-elements.active .labels::before,
+    .first-view .draggable-elements.active .labels::after
+     {
+     opacity: 0;
+      
+      }
+
+
 img {
   width: 200px;
   height: 200px;
@@ -26,6 +56,18 @@ img {
   width: 350px;
   height: 300px;
 }
+.first-view .butterPlate_label::after {
+content: "bread & butter plate";
+position: absolute;
+top: 38%;
+left: 28%;
+}
+.first-view .butterPlate_label::before {
+ top: 35%;
+  left: 31%;
+  transform: rotate(140deg);
+  }
+
 .first-view #dessertSpoon {
   position: absolute;
   top: 7%;
@@ -33,6 +75,20 @@ img {
   width: 300px;
   height: 150px;
 }
+
+.first-view .dessertSpoon_label::after {
+  content: "dessert fork";
+  position: absolute;
+  top: 30%;
+  left: 54%;
+  }
+  .first-view .dessertSpoon_label::before {
+   top: 26%;
+    left: 57%;
+    transform: rotate(90deg);
+    }
+
+
 
 .first-view #dessertFork {
   position: absolute;
@@ -42,6 +98,23 @@ img {
   height: 320px;
 }
 
+
+.first-view .dessertFork_label::after {
+  content: "dessert spoon";
+  position: absolute;
+  top: 5%;
+  left: 51%;
+  }
+  .first-view .dessertFork_label::before {
+   top: 10%;
+    left: 57%;
+    transform: rotate(-90deg);
+    }
+
+
+
+
+
 .first-view #waterGlass {
   position: absolute;
   top: 10%;
@@ -49,6 +122,21 @@ img {
   width: 120px;
   height: 240px;
 }
+
+.first-view .waterGlass_label::after {
+  content: "water glass";
+  position: absolute;
+  top: 33%;
+  left: 67%;
+  }
+.first-view .waterGlass_label::before {
+   top: 30%;
+    left: 76%;
+    transform: rotate(140deg);
+    }
+
+
+
 .first-view #juiceGlass {
   position: absolute;
   top: 7%;
@@ -56,53 +144,166 @@ img {
   width: 200px;
   height: 300px;
 }
+
+.first-view .juiceGlass_label::after {
+  content: "juice glass";
+  position: absolute;
+  top: 40%;
+  left: 78%;
+  }
+.first-view .juiceGlass_label::before {
+   top: 36%;
+    left: 84%;
+    transform: rotate(140deg);
+    }
+
+
+
+
+
+
 .first-view #napkin {
   position: absolute;
-  top: 43%;
+  top: 53%;
   left: 24%;
   width: 375px;
   height: 300px;
 }
 
+.first-view .napkin_label::after {
+  content: "napkin";
+  position: absolute;
+  top: 70%;
+  left: 21%;
+  }
+.first-view .napkin_label::before {
+   top: 71%;
+    left: 28%;
+    transform: rotate(180deg);
+    }
+
+
+
+
+
 .first-view #saladFork {
   position: absolute;
-  top: 47%;
+  top: 57%;
   left: 36%;
   width: 219px;
   height: 260px;
 }
 
+
+.first-view .saladFork_label::after {
+  content: "salad fork";
+  position: absolute;
+  top: 90%;
+  left: 36%;
+  }
+.first-view .saladFork_label::before {
+   top: 85%;
+    left: 41%;
+    transform: rotate(110deg);
+    }
+
+
 .first-view #dinnerFork {
   position: absolute;
-  top: 45%;
+  top: 55%;
   left: 42%;
   width: 250px;
   height: 260px;
 }
+
+.first-view .dinnerFork_label::after {
+  content: "dinner fork";
+  position: absolute;
+  top: 90%;
+  left: 49%;
+  }
+.first-view .dinnerFork_label::before {
+   top: 85%;
+    left: 50%;
+    transform: rotate(70deg);
+    }
+
+
+
 .first-view #placePlate {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 55%;
   width: 350px;
   height: 360px;
 }
+
+
+.first-view .placePlate_label::after {
+  content: "place plate";
+  position: absolute;
+  top: 43%;
+  left: 51%;
+  }
+.first-view .placePlate_label::before {
+   top: 50%;
+    left: 60%;
+    transform: rotate(-110deg);
+    }
+
+
+
+
+
 .first-view #dinnerKnife {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 77%;
   width: 200px;
   height: 300px;
 }
 
+
+.first-view .dinnerKnife_label::after {
+  content: "dinner kinfe";
+  position: absolute;
+  top: 88%;
+  left: 73%;
+  }
+.first-view .dinnerKnife_label::before {
+   top: 85%;
+   left: 81%;
+   transform: rotate(110deg);
+    }
+
+
+
 .first-view #soupSpoon {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 83%;
   width: 200px;
   height: 300px;
 }
+
+.first-view .soupSpoon_label::after {
+  content: "soup Spoon";
+  position: absolute;
+  top: 88%;
+  left: 88%;
+  }
+.first-view .soupSpoon_label::before {
+   top: 84%;
+   left: 89%;
+   transform: rotate(70deg);
+    }
+
+
+
+
+
 .first-view .kol .draggable-elements .draggable {
-  transition: all 1s linear;
+  transition: all 1s linear
 }
 .first-view .kol .draggable-elements.active {
   position: relative;
@@ -208,7 +409,7 @@ img {
 }
 
 .draggable:hover {
-  opacity: 0.5;
+  opacity: 0.4;
 }
 
 .droppable-elements {
@@ -221,41 +422,12 @@ img {
   display: block;
 }
 
-.droppable {
-  height: 6.5rem;
-  width: 6.5rem;
-  margin: 1rem auto;
-  /* display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;*/
-  text-align: center;
-  font-size: 4rem;
-  font-weight: bold;
-  background-color: transparent;
-  border: 3px dashed #111;
-  transition: border-width 0.2s, transform 0.2s, background-color 0.4s;
-}
-
-.droppable span {
-  font-size: 1.25rem;
-  pointer-events: none; /* The element is never the target of pointer events */
-}
 .droppable img {
   width: 100%;
   height: 100%;
   pointer-events: none; /* The element is never the target of pointer events */
 }
 
-.droppable.droppable-hover {
-  /* background-color: #bee3f0; */
-  border-width: 5px;
-  transform: scale(1.1);
-}
-.droppable.dropped {
-  border-style: solid;
-  color: #fff;
-}
 .droppable.dropped span {
   font-size: 0.75rem;
   margin-top: 0.5rem;
@@ -289,6 +461,7 @@ img {
   height: 300px;
 }
 
+
 .droppable-dessertSpoon {
   position: absolute;
   top: 7%;
@@ -302,6 +475,7 @@ img {
   transform: translateY(-20%);
 
 }
+  
 .droppable-dessertFork {
   position: absolute;
   top: 17%;
@@ -331,18 +505,18 @@ img {
 }
 .droppable-napkin {
   position: absolute;
-  top: 43%;
+  top: 53%;
   left: 24%;
   width: 250px;
   height: 300px;
 }
 .droppable-napkin img {
   width: 375px;
-  transform: translateX(-25%); 
+  transform: translateX(-5%); 
 }
 .droppable-saladFork {
   position: absolute;
-  top: 47%;
+  top: 57%;
   left: 38%;
   width: 150px;
   height: 260px;
@@ -357,7 +531,7 @@ img {
 }
 .droppable-dinnerFork {
   position: absolute;
-  top: 45%;
+  top: 55%;
   left: 46%;
   width: 150px;
   height: 260px;
@@ -370,14 +544,14 @@ img {
 }
 .droppable-placePlate {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 55%;
   width: 350px;
   height: 360px;
 }
 .droppable-dinnerKnife {
   position: absolute;
-  top: 40%;
+  top: 50%;
   right: 13%;
   width: 160px;
   height: 300px;
@@ -388,16 +562,181 @@ transform: translateX(-30px);
 }
 .droppable-soupSpoon {
   position: absolute;
-  top: 40%;
+  top: 50%;
   right: 5%;
   width: 160px;
   height: 300px;
 }
 .droppable-soupSpoon img {
   transform: translateX(-30px);
-
+  
   width: 200px;
+
 }
+.droppable-elements .droppable-butterPlate::after {
+  content: "bread & butter plate";
+  position: absolute;
+  top: 110%;
+  left: 0%;
+  }
+.droppable-elements .droppable-butterPlate::before {
+   top: 100%;
+    left: 20%;
+    transform: rotate(140deg);
+  }
+
+
+    .droppable-elements .droppable-dessertSpoon::after {
+  content: "dessert spoon";
+  position: absolute;
+  top: -70%;
+  left: 15%;
+  }
+  .droppable-elements .droppable-dessertSpoon::before {
+    top: -20%;
+    left: 40%;
+    transform: rotate(-90deg);
+    }
+    .droppable-elements .droppable-dessertFork::after {
+  content: "dessert fork";
+ 
+  position: absolute;
+  top: 120%;
+  left: 20%;
+  }
+  .droppable-elements .droppable-dessertFork::before {
+
+    top: 90%;
+    left: 40%;
+    transform: rotate(90deg);
+    }
+
+
+
+.droppable-elements .droppable-waterGlass::after {
+  content: "water glass";
+  position: absolute;
+  top: 110%;
+  left: -100%;
+  }
+.droppable-elements .droppable-waterGlass::before {
+   top: 100%;
+    left: 0%;
+    transform: rotate(140deg);
+    }
+
+
+.droppable-elements .droppable-juiceGlass::after {
+  content: "juice glass";
+  position: absolute;
+  top: 110%;
+  left: -40%;
+  }
+.droppable-elements .droppable-juiceGlass::before {
+   top: 100%;
+    left: 0%;
+    transform: rotate(140deg);
+    }
+
+.droppable-elements .droppable-napkin::after {
+  content: "napkin";
+  position: absolute;
+  top: 60%;
+  left: -30%;
+  }
+.droppable-elements .droppable-napkin::before {
+   top: 60%;
+    left: 20%;
+    transform: rotate(180deg);
+    }
+
+.droppable-elements .droppable-saladFork::after {
+  content: "salad fork";
+  position: absolute;
+  top: 120%;
+  left: -70%;
+  width: 140%;
+  }
+.droppable-elements .droppable-saladFork::before {
+   top: 100%;
+    left: 20%;
+    transform: rotate(110deg);
+    }
+
+
+
+.droppable-elements .droppable-dinnerFork::after {
+  content: "dinner fork";
+  position: absolute;
+  top: 130%;
+  left: 50%;
+  width: 140%;
+  }
+.droppable-elements .droppable-dinnerFork::before {
+   top: 110%;
+    left: 50%;
+    transform: rotate(70deg);
+    }
+
+
+
+
+
+.droppable-elements .droppable-placePlate::after {
+  content: "place plate";
+  position: absolute;
+  top: -15%;
+  left: 5%;
+  }
+.droppable-elements .droppable-placePlate::before {
+   top: 0%;
+    left: 30%;
+    transform: rotate(-110deg);
+    }
+
+
+.droppable-elements .droppable-dinnerKnife::after {
+  content: "dinner kinfe";
+  position: absolute;
+  top: 125%;
+  left: -60%;
+  width: 130%;
+  }
+.droppable-elements .droppable-dinnerKnife::before {
+   top: 115%;
+   left: 10%;
+   transform: rotate(110deg);
+    }
+
+
+
+.droppable-elements .droppable-soupSpoon::after {
+  content: "soup Spoon";
+  position: absolute;
+  top: 125%;
+  left: 0%;
+  width: 150%;
+  }
+.droppable-elements .droppable-soupSpoon::before {
+   top: 115%;
+   left: 50%;
+   transform: rotate(70deg);
+    }
+
+    .droppable-elements .droppable::after {
+      opacity: 0;
+      }
+    .droppable-elements .droppable::before {
+       opacity: 0;
+        }
+
+        .droppable-elements .dropped::after, .droppable-elements.a  .droppable::after {
+          
+          opacity: 1;
+          }
+        .droppable-elements .dropped::before, .droppable-elements.a  .droppable::before {
+           opacity: 1;
+            }
 /*
   */
 
@@ -413,9 +752,12 @@ transform: translateX(-30px);
   text-align: center;
   background-color: gray;
   cursor: pointer;
-  width: 143px;
-  font-size: 32px;
+  font-size: 22px;
   color: white;
   display: block;
   letter-spacing: 1px;
+  padding: 20px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }

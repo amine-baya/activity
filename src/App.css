@@ -23,7 +23,28 @@ body {
      background-color: #002b66;
      
  }
-
+ .control-buttons p{
+   line-height: 80vh;
+   color: white;
+   font-size: 30px;
+   text-transform: uppercase;
+   letter-spacing: 10px;
+   animation: anime 2s 1s ease both;
+ }
+ @keyframes anime {
+   0%
+   {
+     margin-left: -200%;
+   }
+   50% 
+   {
+     margin-left: 100px;
+   }
+   100% 
+   {
+     margin-left: 0;
+   }
+ }
  .controll-buttons-hide{
      width: 0;
      height: 0;

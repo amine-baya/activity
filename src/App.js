@@ -25,6 +25,7 @@ const start = () => {
 
         <div className="App">
           <div className={show ? "control-buttons" : "controll-buttons-hide" } >
+            <p>hello, are you ready to test your memory</p>
             <span className={show ? "start-button" : "controll-buttons-hide" } onClick={() => start()} >Start Activity</span>
           </div>
 

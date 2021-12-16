@@ -15,7 +15,7 @@ import './act.css'
 
 const Act = (props) => {
 
-  const [timer, settimer] = useState(20)
+  const [timer, setTimer] = useState(20)
   const [help, sethelp] = useState(false)
 
 
@@ -87,10 +87,13 @@ const Act = (props) => {
       }
     }
 
+    //let wa = document.querySelector('.draggable-elements')
+    //console.log(wa);
+
    useEffect(() => {
     if (timer > 0 && !props.show) {
       setTimeout(() => {
-        settimer(timer - 1)
+        setTimer(timer - 1)
       }, 1000);
     }
      
@@ -99,10 +102,12 @@ const Act = (props) => {
 
    const helpHandeller = () => {
    if (timer == 0) {
-      settimer(5)
+      setTimer(5)
       sethelp(true)
+      //wa.classList.remove("show");
      setTimeout(() => {
        sethelp(false)
+       //wa.classList.add("active");
      }, 5000);
     }
    }
@@ -117,17 +122,17 @@ const Act = (props) => {
       
         <div className={`kol ${props.active}`}>
         <section class= {`draggable-elements ${props.active}`}>
-            <img className="draggable"  src={butterPlate} alt="butterPlate" id="butterPlate"  />
-            <img className="draggable"  src={dessertFork} alt="dessertFork" id="dessertFork"  />
-            <img className="draggable"  src={dessertSpoon} alt="dessertSpoon" id="dessertSpoon"  />
-            <img className="draggable"  src={dinnerFork} alt="dinnerFork" id="dinnerFork"  />
-            <img className="draggable"  src={dinnerKnife} alt="dinnerKnife" id="dinnerKnife"  />
-            <img className="draggable"  src={waterGlass} alt="waterGlass" id="waterGlass"  />
-            <img className="draggable"  src={juiceGlass} alt="juiceGlass" id="juiceGlass"  />
-            <img className="draggable"  src={napkin}     alt="napkin" id="napkin" />
-            <img className="draggable"  src={placePlate} alt="placePlate" id="placePlate"  />
-            <img className="draggable"  src={saladFork} alt="saladFork" id="saladFork"  />
-            <img className="draggable"  src={soupSpoon} alt="soupSpoon" id="soupSpoon"   />
+            <div className='butterPlate_label labels'><img className="draggable"  src={butterPlate} alt="butterPlate" id="butterPlate"  />  </div>
+            <div className='dessertFork_label labels'><img className="draggable"  src={dessertFork} alt="dessertFork" id="dessertFork" />   </div>
+            <div className='dessertSpoon_label labels'><img className="draggable"  src={dessertSpoon} alt="dessertSpoon" id="dessertSpoon"/></div>
+            <div className='dinnerFork_label labels'><img className="draggable"  src={dinnerFork} alt="dinnerFork" id="dinnerFork"  />      </div>
+            <div className='dinnerKnife_label labels'><img className="draggable"  src={dinnerKnife} alt="dinnerKnife" id="dinnerKnife" />   </div>
+            <div className='waterGlass_label labels'><img className="draggable"  src={waterGlass} alt="waterGlass" id="waterGlass" />       </div>
+            <div className='juiceGlass_label labels'><img className="draggable"  src={juiceGlass} alt="juiceGlass" id="juiceGlass" />       </div>
+            <div className='napkin_label labels'><img className="draggable"  src={napkin}     alt="napkin" id="napkin" />                   </div>
+            <div className='placePlate_label labels'><img className="draggable"  src={placePlate} alt="placePlate" id="placePlate" />       </div>
+            <div className='saladFork_label labels'><img className="draggable"  src={saladFork} alt="saladFork" id="saladFork" />           </div>
+            <div className='soupSpoon_label labels'><img className="draggable"  src={soupSpoon} alt="soupSpoon" id="soupSpoon"  />          </div>
   
                 
        </section>
