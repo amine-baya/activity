@@ -17,7 +17,7 @@ const start = () => {
   setTimeout(() => {
   setactive("active")
     
-  }, 21000);
+  }, 16000);
 }
 
   return (

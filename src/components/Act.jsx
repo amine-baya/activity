@@ -15,7 +15,7 @@ import './act.css'
 
 const Act = (props) => {
 
-  const [timer, setTimer] = useState(20)
+  const [timer, setTimer] = useState(15)
   const [help, sethelp] = useState(false)
 
 
